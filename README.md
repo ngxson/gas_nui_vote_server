@@ -1,12 +1,12 @@
-# gas_nui_vote_server
+# NUI Vote Server
 
-Code server để nhận webhook, lưu lượt like và comments vào database riêng theo thời gian thực
+Code server để nhận webhook từ facebook, lưu lượt like và comments vào database riêng theo thời gian thực.
 
 # Tại sao phải dùng cái này?
 
 Vì với lượt like khá lớn (ví dụ trên 500k), thì FB sẽ KHÔNG hiện hết được, cho dù có dùng cả graph API. Tool này tạo ra để lưu luôn lượt like và cmt theo thời gian thực. Vì vậy kể cả nick có deactivate thì cũng còn comment của họ trên database.
 
-# Các cài đặt
+# Cách cài đặt
 
 1. Tạo mới 1 Google Form cho việc lưu cmt, gồm 4 ô điền theo thứ tự:
 - time: câu trả lời ngắn
