@@ -4,7 +4,7 @@ Code server để nhận webhook từ facebook, lưu lượt like và comments v
 
 # Tại sao phải dùng cái này?
 
-Vì với lượt like khá lớn (ví dụ trên 500k), thì FB sẽ KHÔNG hiện hết được, cho dù có dùng cả graph API. Tool này tạo ra để lưu luôn lượt like và cmt theo thời gian thực. Vì vậy kể cả nick có deactivate thì cũng còn comment của họ trên database.
+Vì với lượt like/cmts khá lớn (ví dụ trên 500), thì FB sẽ KHÔNG hiện hết được, cho dù có dùng cả graph API. Phương pháp này được tạo ra để lưu luôn lượt like và cmt theo thời gian thực. Vì vậy kể cả nick có deactivate thì cũng còn comment của họ trên database.
 
 # Cách cài đặt
 
