@@ -20,8 +20,7 @@ function doPost(e) {
       processRequest(entry);
     });
   } catch (err) {
-    //var doc = DocumentApp.openById("15IXYe_cpouufPkZOoRhU3TKjjYn4Kqip6cu3O3oEV-I");
-    //doc.getBody().setText(JSON.stringify(err));
+    //for error catcher
   }
 }
 
@@ -63,8 +62,8 @@ function saveLike(id, time, type, team) {
   var app = FormApp.openById();
   var FormResponse = app.createResponse(LIKE_FORM);
   var q = app.getItems();
-  FormResponse.withItemResponse(q[0].asTextItem().createResponse(id+''));
-  FormResponse.withItemResponse(q[1].asTextItem().createResponse(time*1000+''));
+  FormResponse.withItemResponse(q[0].asTextItem().createResponse(time*1000+''));
+  FormResponse.withItemResponse(q[1].asTextItem().createResponse(id+''));
   FormResponse.withItemResponse(q[2].asParagraphTextItem().createResponse(type+''));
   FormResponse.withItemResponse(q[3].asTextItem().createResponse(team));
   FormResponse.submit();
