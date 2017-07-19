@@ -9,12 +9,12 @@ Vì với lượt like khá lớn (ví dụ trên 500k), thì FB sẽ KHÔNG hi�
 # Các cài đặt
 
 1. Tạo mới 1 Google Form cho việc lưu cmt, gồm 4 ô điền theo thứ tự:
-- id: câu trả lời ngắn
+- time: câu trả lời ngắn
 - id: câu trả lời ngắn
 - cmt: câu trả lời DÀI
 - team: câu trả lời ngắn
 2. Tạo mới 1 Google Form nữa để lưu lượt like, gồm 4 ô điền theo thứ tự:
-- id: câu trả lời ngắn
+- time: câu trả lời ngắn
 - id: câu trả lời ngắn
 - type: câu trả lời DÀI
 - team: câu trả lời ngắn
@@ -40,6 +40,7 @@ Vì với lượt like khá lớn (ví dụ trên 500k), thì FB sẽ KHÔNG hi�
 - Bấm get token, chọn page bạn mở muốn bình chọn
 - Chỗ nhập địa chỉ: chuyển GET thành POST và nhập vào: /id-của-page/subscribed_apps
 - Bấm Send, nó hiện ra success:true là được
+12. Thử cmt và like post bạn đã chọn. Nếu nó hiện ở 2 form đã tạo thì thành công.
 
 # Credit
 
