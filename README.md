@@ -11,12 +11,12 @@ Vì với lượt like/cmts khá lớn (ví dụ trên 500), thì FB sẽ KHÔNG
 1. Tạo mới 1 Google Form cho việc lưu cmt, gồm 4 ô điền theo thứ tự:
 - time: câu trả lời ngắn
 - id: câu trả lời ngắn
-- cmt: câu trả lời DÀI
+- cmt: câu trả lời ngắn
 - team: câu trả lời ngắn
 2. Tạo mới 1 Google Form nữa để lưu lượt like, gồm 4 ô điền theo thứ tự:
 - time: câu trả lời ngắn
 - id: câu trả lời ngắn
-- type: câu trả lời DÀI
+- type: câu trả lời ngắn
 - team: câu trả lời ngắn
 3. Tạo project mới tại Google App Script
 4. Copy paste code từ github vào Code.gs

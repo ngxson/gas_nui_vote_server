@@ -1,5 +1,6 @@
 var teams = {
-  "1808871722730718_2029963597288195":"1"
+  "1808871722730718_2029963597288195":"1",
+  "1808871722730718_2032267327057822":"2"
 }
 var CMT_FORM = "";
 var LIKE_FORM = "";
@@ -48,23 +49,23 @@ function processRequest(data) {
 
 function saveCmt(id, time, cmt, team) {
   if (!cmt) return;
-  var app = FormApp.openById();
-  var FormResponse = app.createResponse(CMT_FORM);
+  var app = FormApp.openById(CMT_FORM);
+  var FormResponse = app.createResponse();
   var q = app.getItems();
   FormResponse.withItemResponse(q[0].asTextItem().createResponse(time*1000+''));
   FormResponse.withItemResponse(q[1].asTextItem().createResponse(id+''));
-  FormResponse.withItemResponse(q[2].asParagraphTextItem().createResponse(cmt+''));
+  FormResponse.withItemResponse(q[2].asTextItem().createResponse(cmt+''));
   FormResponse.withItemResponse(q[3].asTextItem().createResponse(team));
   FormResponse.submit();
 }
 
 function saveLike(id, time, type, team) {
-  var app = FormApp.openById();
-  var FormResponse = app.createResponse(LIKE_FORM);
+  var app = FormApp.openById(LIKE_FORM);
+  var FormResponse = app.createResponse();
   var q = app.getItems();
   FormResponse.withItemResponse(q[0].asTextItem().createResponse(time*1000+''));
   FormResponse.withItemResponse(q[1].asTextItem().createResponse(id+''));
-  FormResponse.withItemResponse(q[2].asParagraphTextItem().createResponse(type+''));
+  FormResponse.withItemResponse(q[2].asTextItem().createResponse(type+''));
   FormResponse.withItemResponse(q[3].asTextItem().createResponse(team));
   FormResponse.submit();
 }
